@@ -1,0 +1,28 @@
+{
+	"name": "vf1",
+	"properties": {
+		"type": "Managed",
+		"description": "vf1",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "East Asia",
+				"nodeSize": "Standard_D8_v3",
+				"numberOfNodes": 1,
+				"maxParallelExecutionsPerNode": 1
+			},
+			"ssisProperties": {
+				"catalogInfo": {
+					"catalogServerEndpoint": "tkesvr.database.windows.net",
+					"catalogAdminUserName": "mytest",
+					"catalogAdminPassword": {
+						"type": "SecureString",
+						"value": "**********"
+					},
+					"catalogPricingTier": "S1"
+				},
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded"
+			}
+		}
+	}
+}
